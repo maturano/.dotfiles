@@ -1,0 +1,7 @@
+"1.2pre
+
+loadplugins '\.(js|penta)$'
+group user
+set cdpath=''
+
+" vim: set ft=pentadactyl:
