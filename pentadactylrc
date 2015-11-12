@@ -1,7 +1,8 @@
-"1.2pre
-
 loadplugins '\.(js|penta)$'
+
 group user
 set cdpath=''
+
+colorscheme molokai
 
 " vim: set ft=pentadactyl:
