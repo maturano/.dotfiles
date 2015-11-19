@@ -5,4 +5,6 @@ set cdpath=''
 
 colorscheme molokai
 
+set defsearch=duckduckgo
+
 " vim: set ft=pentadactyl:
