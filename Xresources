@@ -1,2 +1,3 @@
+urxvt.font: xft:hack:autohint=true:antialias=true:size=9
 urxvt.background: #101010
 urxvt.foreground: #d0d0d0
