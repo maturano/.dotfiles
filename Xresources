@@ -1,4 +1,23 @@
-urxvt.font:       xft:hack:autohint=true:antialias=true:size=9
-urxvt.scrollBar:  false
-urxvt.background: #101010
-urxvt.foreground: #d0d0d0
+urxvt.font:        xft:hack:autohint=true:antialias=true:size=9
+urxvt.scrollBar:   false
+
+urxvt.background:  #101010
+urxvt.foreground:  #d0d0d0
+urxvt.cursorColor: #d0d0d0
+urxvt.colorBD:     #ffffff
+urxvt.color0:      #1b1d1e
+urxvt.color1:      #f92672
+urxvt.color2:      #82b414
+urxvt.color3:      #fd971f
+urxvt.color4:      #1080d0
+urxvt.color5:      #8c54fe
+urxvt.color6:      #465457
+urxvt.color7:      #ccccc6
+urxvt.color8:      #505354
+urxvt.color9:      #ff5995
+urxvt.color10:     #b6e354
+urxvt.color11:     #feed6c
+urxvt.color12:     #8cedff
+urxvt.color13:     #9e6ffe
+urxvt.color14:     #899ca1
+urxvt.color15:     #f8f8f2
