@@ -1,0 +1,5 @@
+#!/bin/bash
+
+scrot -e 'convert -blur 0x3 $f /tmp/lockbg.png; rm $f'
+i3lock -u -p win -c 000000 -i /tmp/lockbg.png
+rm /tmp/lockbg.png
