@@ -5,6 +5,7 @@ call plug#begin('~/.nvim/plugins')
 
 Plug 'tomasr/molokai'
 Plug 'bling/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
