@@ -19,6 +19,7 @@ set hidden
 
 set incsearch
 set wildmenu
+set wildmode=list:longest
 set wildoptions=tagfile
 set wildignorecase
 
