@@ -4,7 +4,8 @@ scriptencoding utf-8
 call plug#begin('~/.nvim/plugins')
 
 Plug 'tomasr/molokai'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
