@@ -1,11 +1,11 @@
 
 *faceName: dejavu sans mono for powerline
-*faceSize: 9
+*faceSize: 8
 
-*font:           xft:dejavu sans mono for powerline:style=book:size=9
-*boldFont:       xft:dejavu sans mono for powerline:style=bold:size=9
-*italicFont:     xft:dejavu sans mono for powerline:style=oblique:size=9
-*boldItalicFont: xft:dejavu sans mono for powerline:style=bold oblique:size=9
+*font:           xft:dejavu sans mono for powerline:style=book:size=8
+*boldFont:       xft:dejavu sans mono for powerline:style=bold:size=8
+*italicFont:     xft:dejavu sans mono for powerline:style=oblique:size=8
+*boldItalicFont: xft:dejavu sans mono for powerline:style=bold oblique:size=8
 
 *background: #101010
 *foreground: #d0d0d0
@@ -37,6 +37,7 @@ xft.rgba:      rgb
 urxvt*cursorColor: #d0d0d0
 urxvt*colorBD:     #ffffff
 
+urxvt.letterSpace: -1
 urxvt.scrollBar:       false
 urxvt*cursorUnderline: true
 urxvt*cursorBlink:     true
