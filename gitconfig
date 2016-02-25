@@ -12,9 +12,10 @@
     default = simple
 
 [alias]
-    st = status
+    st = status -sb
     ci = commit
     co = checkout
+    lg = log --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%Cred%d%Creset %Cgreen(%ai)%Creset %C(bold blue)%an%Creset%n%Creset%B' --stat
 
 [credential]
     helper = cache --timeout=3600
