@@ -8,6 +8,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'vimwiki/vimwiki'
+Plug 'shougo/deoplete.nvim'
 
 call plug#end()
 
@@ -33,6 +35,11 @@ set noshowmode
 
 syntax enable
 colorscheme molokai
+let g:rehash256=1
 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+
+let g:vimwiki_list=[{'path': '~/Workspace/_wiki'}]
+
+let g:deoplete#enable_at_startup=1
