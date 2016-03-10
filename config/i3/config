@@ -159,7 +159,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
     status_command i3status --config ~/.config/i3/status.conf
-    tray_output VGA-0 # FIXME
+    tray_output primary
     colors {
         statusline #ffffff
         background #2e2e2e
