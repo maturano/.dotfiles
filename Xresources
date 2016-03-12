@@ -2,10 +2,10 @@
 *faceName: dejavu sans mono for powerline
 *faceSize: 9
 
-*font:           xft:dejavu sans mono for powerline:style=book:size=9
-*boldFont:       xft:dejavu sans mono for powerline:style=bold:size=9
-*italicFont:     xft:dejavu sans mono for powerline:style=oblique:size=9
-*boldItalicFont: xft:dejavu sans mono for powerline:style=bold oblique:size=9
+*font:           xft:dejavu sans mono for powerline:book:size=9
+*boldFont:       xft:dejavu sans mono for powerline:bold:size=9
+*italicFont:     xft:dejavu sans mono for powerline:oblique:size=9
+*boldItalicFont: xft:dejavu sans mono for powerline:bold oblique:size=9
 
 *background: #101010
 *foreground: #d0d0d0
@@ -42,3 +42,7 @@ urxvt.scrollBar:       false
 urxvt*cursorUnderline: true
 urxvt*cursorBlink:     true
 !urxvt*fading:      10
+
+urxvt.perl-ext-common: default,matcher
+urxvt.url-launcher: /usr/bin/firefox
+urxvt.matcher.button: 1
