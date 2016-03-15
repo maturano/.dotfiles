@@ -26,7 +26,7 @@ set wildmenu
 set wildmode=list:longest
 set wildoptions=tagfile
 set wildignorecase
-let mapleader=","
+let mapleader="\<Space>"
 
 set laststatus=2
 set number relativenumber
