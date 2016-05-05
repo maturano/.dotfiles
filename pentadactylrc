@@ -7,4 +7,9 @@ colorscheme molokai
 
 set defsearch=duckduckgo
 
+set passkeys=
+set passkeys+=duckduckgo.com:jkv
+set passkeys+=docs.google.com:*
+set passkeys+=play.google.com:<left><right><space>
+
 " vim: set ft=pentadactyl:
