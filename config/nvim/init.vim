@@ -3,13 +3,14 @@ scriptencoding utf-8
 
 call plug#begin('~/.nvim/plugins')
 
+Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
     \| Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'vimwiki/vimwiki'
 Plug 'shougo/deoplete.nvim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
