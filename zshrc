@@ -1,10 +1,17 @@
-source $HOME/.dotfiles/antigen/antigen.zsh
+export ZPLUG_HOME=$HOME/.dotfiles/_vendor/zplug
+source $ZPLUG_HOME/init.zsh
 
-antigen use oh-my-zsh
 
-antigen theme agnoster
-export DEFAULT_USER=$(whoami)
+zplug "themes/agnoster", from:oh-my-zsh
+zplug "srijanshetty/node.plugin.zsh"
 
-antigen bundle nvm
 
-antigen apply
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
