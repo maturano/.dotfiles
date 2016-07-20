@@ -10,6 +10,7 @@ source $ZPLUG_HOME/init.zsh
 zplug "bhilburn/powerlevel9k"
 zplug "srijanshetty/node.plugin.zsh"
 zplug "johnhamelink/rvm-zsh"
+zplug "horosgrisa/autoenv"
 
 
 # Install plugins if there are plugins that have not been installed
