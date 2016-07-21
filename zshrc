@@ -29,13 +29,13 @@ SAVEHIST=10000
 alias history='fc -il 1'
 
 setopt append_history
-setopt extended_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups # ignore duplication command history list
-setopt hist_ignore_space
+setopt extended_history         # Record timestamp of command in HISTFILE
+setopt hist_expire_dups_first   # Delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups         # Ignore duplication command history list
+setopt hist_ignore_space        # Ignore commands that start with space
 setopt hist_verify
-setopt inc_append_history
-setopt share_history # share command history data
+setopt inc_append_history       # Add commands to HISTFILE in order of execution
+setopt share_history            # Share command history data
 
 
 # Aliases
