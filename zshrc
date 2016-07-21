@@ -20,7 +20,7 @@ zplug load
 
 
 # Command history configuration
-HISTFILE=$HOME/.history_command
+HISTFILE=$HOME/.private/shell_history
 
 HISTSIZE=10000
 SAVEHIST=10000
@@ -36,3 +36,7 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
+
+
+# Aliases
+[ -f ~/.dotfiles/shell_aliases ] && . ~/.dotfiles/shell_aliases
