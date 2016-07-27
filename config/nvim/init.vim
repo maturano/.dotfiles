@@ -25,7 +25,7 @@ set hidden
 
 set incsearch
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:full
 set wildoptions=tagfile
 set wildignorecase
 let mapleader="\<Space>"
