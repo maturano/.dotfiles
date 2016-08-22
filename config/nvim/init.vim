@@ -3,6 +3,7 @@ scriptencoding utf-8
 
 call plug#begin('~/.nvim/plugins')
 
+Plug 'metakirby5/codi.vim', { 'branch': 'user/metakirby5'}
 Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
