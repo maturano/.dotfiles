@@ -1,7 +1,7 @@
 ZPLUG_HOME=$HOME/.dotfiles/_vendor/zplug
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context status background_jobs dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version rvm)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version virtualenv rvm)
 POWERLEVEL9K_STATUS_VERBOSE=false
 DEFAULT_USER=$USER
 
@@ -11,6 +11,7 @@ zplug "bhilburn/powerlevel9k"
 zplug "srijanshetty/node.plugin.zsh"
 zplug "johnhamelink/rvm-zsh"
 zplug "horosgrisa/autoenv"
+zplug "mchav/with", as:command, use:with
 
 
 # Install plugins if there are plugins that have not been installed
@@ -28,6 +29,7 @@ SAVEHIST=10000
 # history with format yyyy-mm-dd
 alias history='fc -il 1'
 
+setopt auto_cd
 setopt append_history
 setopt extended_history         # Record timestamp of command in HISTFILE
 setopt hist_expire_dups_first   # Delete duplicates first when HISTFILE size exceeds HISTSIZE
@@ -39,4 +41,4 @@ setopt share_history            # Share command history data
 
 
 # Aliases
-[ -f ~/.dotfiles/shell_aliases ] && . ~/.dotfiles/shell_aliases
+[[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
