@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 beep() {
-    paplay --device=0 /usr/share/sounds/ubuntu/stereo/dialog-information.ogg
+    paplay --device=0 $HOME/.dotfiles/_assets/dialog-information.ogg
 }
 
 scrot '/tmp/screenshot_%F_%H%M%S_$wx$h.png' "$@"

@@ -5,7 +5,7 @@ DELAY=10
 
 # Sound notification to let one know when recording is about to start (and ends)
 beep() {
-    paplay --device=0 /usr/share/sounds/ubuntu/stereo/dialog-information.ogg
+    paplay --device=0 $HOME/.dotfiles/_assets/dialog-information.ogg
 }
 
 # Duration and output file
