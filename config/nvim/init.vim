@@ -60,6 +60,8 @@ map <C-l> <C-w>l
 " Save with sudo
 cmap w!! w !sudo tee % >/dev/null
 
+nmap <leader>l :ls<CR>:b<space>
+
 " Format json
 " TODO: Detect filetype?
 nmap =j :%!python -m json.tool<CR>
