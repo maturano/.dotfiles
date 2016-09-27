@@ -94,6 +94,10 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+workspace  7 output DP2
+workspace  8 output DP2
+workspace  9 output DP2
+workspace 10 output DP2
 
 assign [class="Firefox"] → 1
 
@@ -167,6 +171,7 @@ bindsym $mod+Shift+s sticky toggle
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    output DP2
     position top
     status_command i3status --config ~/.config/i3/status.conf
     tray_output primary
@@ -178,3 +183,5 @@ bar {
         inactive_workspace #2C3E50 #2C3E50 #BDC3C7
     }
 }
+
+exec_always --no-startup-id xrandr --output DP2 --primary --right-of DP1
