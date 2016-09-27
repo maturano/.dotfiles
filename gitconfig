@@ -9,7 +9,7 @@
     ui = true
 
 [push]
-    default = simple
+    default = current
 
 [alias]
     st = status -sb
