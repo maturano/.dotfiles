@@ -6,6 +6,7 @@ call plug#begin('~/.nvim/plugins')
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
+Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
     \| Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
