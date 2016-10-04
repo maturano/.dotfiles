@@ -5,6 +5,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version virtualenv rvm)
 POWERLEVEL9K_STATUS_VERBOSE=false
 DEFAULT_USER=$USER
 NVM_LAZY_LOAD=true
+NVM_NO_USE=true
 
 
 source $ZPLUG_HOME/init.zsh
@@ -16,7 +17,7 @@ zplug "horosgrisa/autoenv"
 zplug "mchav/with", as:command, use:with
 
 # Install plugins if there are plugins that have not been installed
-zplug check  || zplug install
+zplug check || zplug install
 zplug load
 
 
