@@ -1,10 +1,10 @@
 # Editors and IDEs
 *~
-/.idea/
-/.settings/
-/nbproject/
-/*.sublime-*
-/[._]*.s[a-w][a-z]
+.idea/
+.settings/
+nbproject/
+*.sublime-*
+[._]*.s[a-w][a-z]
 
 # Enviroment
-/.out
+.out
