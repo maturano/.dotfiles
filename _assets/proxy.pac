@@ -8,12 +8,13 @@ var FindProxyForURL = function(init, profiles) {
         } while (typeof result !== "string" || result.charCodeAt(0) === 43);
         return result;
     };
-}("+auto switch", {
+} ("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
-        if (/^public-dev\.reedlabs\.co\.uk$/.test(host)) return "+proxy";
+        if (/^public-(dev|test)\.reedlabs\.co\.uk$/.test(host)) return "+proxy";
         return "DIRECT";
     },
+
     "+proxy": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^[^:]+:\/\/::1\//.test(url) || /^localhost$/.test(host)) return "DIRECT";
