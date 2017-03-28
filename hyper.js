@@ -20,10 +20,10 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#c7c7c7',
 
     // terminal background color
-    backgroundColor: '#000',
+    backgroundColor: '#171717',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -52,17 +52,17 @@ module.exports = {
     colors: {
       black: '#000000',
       red: '#ff0000',
-      green: '#33ff00',
-      yellow: '#ffff00',
-      blue: '#0066ff',
+      green: '#91c629',
+      yellow: '#e6da73',
+      blue: '#0094d9',
       magenta: '#cc00ff',
       cyan: '#00ffff',
       white: '#d0d0d0',
       lightBlack: '#808080',
       lightRed: '#ff0000',
-      lightGreen: '#33ff00',
-      lightYellow: '#ffff00',
-      lightBlue: '#0066ff',
+      lightGreen: '#bde371',
+      lightYellow: '#fff27f',
+      lightBlue: '#00beff',
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
@@ -104,7 +104,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperminimal', 'hyperterm-monokai'],
+  plugins: ['hyperminimal'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
