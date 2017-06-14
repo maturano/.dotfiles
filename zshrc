@@ -1,4 +1,12 @@
-ZPLUG_HOME=$HOME/.dotfiles/_vendor/zplug
+ZPLUG_REPOS="$HOME/.dotfiles/_vendor"
+ZPLUG_HOME="$ZPLUG_REPOS/zplug/zplug"
+ZPLUG="$ZPLUG_HOME/init.zsh"
+
+if [ ! -f "$ZPLUG" ]; then
+    git clone https://github.com/zplug/zplug $ZPLUG_HOME
+fi
+
+source $ZPLUG
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context status background_jobs dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version virtualenv rvm)
@@ -8,9 +16,9 @@ NVM_LAZY_LOAD=true
 NVM_NO_USE=true
 
 
-source $ZPLUG_HOME/init.zsh
 
-zplug "bhilburn/powerlevel9k"
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
+zplug "bhilburn/powerlevel9k", as:theme
 zplug "lukechilds/zsh-nvm"
 zplug "johnhamelink/rvm-zsh"
 zplug "horosgrisa/autoenv"
