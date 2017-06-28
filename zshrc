@@ -46,8 +46,9 @@ setopt append_history
 setopt extended_history         # Record timestamp of command in HISTFILE
 setopt hist_expire_dups_first   # Delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_ignore_dups         # Ignore duplication command history list
+setopt hist_ignore_all_dups     # If duplicate to be added, remove older instance in history
 setopt hist_ignore_space        # Ignore commands that start with space
-setopt hist_verify
+setopt hist_verify              # Upon history 'selection', require carriage return to execute
 setopt inc_append_history       # Add commands to HISTFILE in order of execution
 setopt share_history            # Share command history data
 
