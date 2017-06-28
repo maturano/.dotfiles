@@ -22,7 +22,7 @@ call plug#end()
 set nobackup
 set noswapfile
 set shortmess+=I
-set gdefault " `/g` on search as default
+set gdefault    " `/g` on search as default
 set splitbelow
 set splitright
 set incsearch
@@ -34,12 +34,15 @@ set laststatus=2
 set ruler
 set noshowmode
 set nohlsearch
+set smartcase
 
 " Code editor
-set autoindent
-set expandtab " Spaces instead of <Tab>s
-set tabstop=4 softtabstop=4 shiftwidth=4 " 4 spaces | TODO: set 2 for X(HT)ML-type
+set showmatch
 set nowrap textwidth=120
+set expandtab   " Spaces instead of <Tab>s
+set tabstop=4 softtabstop=4 shiftwidth=4    " TODO: set 2 for X(HT)ML-type
+set autoindent
+set smartindent     " TODO: compare with cindent/indentexpr
 set backspace=indent,eol,start
 set hidden
 set number relativenumber
@@ -61,11 +64,10 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Keep cursor in place when joining lines
 nnoremap J mzJ`z
-" Save with sudo | TODO: Could be improve
+" Save with sudo | REVIEW: Could be improve
 cmap w!! w !sudo tee % >/dev/null
 nmap <leader>l :ls<CR>:b<space>
-
-" Format JSON | TODO: Detect filetype?
+" Format JSON | REVIEW: Detect filetype?
 nmap =j :%!python -m json.tool<CR>
 
 " Plugins
