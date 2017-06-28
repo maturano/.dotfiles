@@ -1,8 +1,7 @@
 scriptencoding utf-8
 
-
-call plug#begin('~/.nvim/plugins')
-
+call plug#begin('~/.dotfiles/_vendor/')
+" vim-plug: https://github.com/junegunn/vim-plug
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'

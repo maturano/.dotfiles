@@ -1,2 +1,3 @@
 _vendor/
-/config/nvim/.netrwhist
+config/nvim/.netrwhist
+config/nvim/autoload/plug.vim.old
