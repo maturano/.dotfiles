@@ -2,9 +2,11 @@
 *~
 .idea/
 .settings/
+.vscode/
 nbproject/
 *.sublime-*
 [._]*.s[a-w][a-z]
 
 # Enviroment
+.env
 .out
