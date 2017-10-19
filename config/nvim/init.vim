@@ -19,6 +19,7 @@ call plug#end()
 
 
 " Editor behaviour
+set path+=**
 set nobackup
 set noswapfile
 set shortmess+=I
