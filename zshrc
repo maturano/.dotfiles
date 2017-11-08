@@ -26,6 +26,7 @@ zplug "lukechilds/zsh-nvm"
 zplug "johnhamelink/rvm-zsh"
 zplug "horosgrisa/autoenv"
 zplug "mchav/with", as:command, use:with
+zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
 
 # Install plugins if there are plugins that have not been installed
 zplug check || zplug install
