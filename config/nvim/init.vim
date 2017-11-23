@@ -11,7 +11,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'shougo/deoplete.nvim'
+Plug 'roxma/nvim-completion-manager'
+Plug 'w0rp/ale'
 Plug 'metakirby5/codi.vim'
 Plug 'vimwiki/vimwiki'
 
@@ -72,7 +73,15 @@ nmap <leader>l :ls<CR>:b<space>
 nmap =j :%!python -m json.tool<CR>
 
 " Plugins
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:vimwiki_list=[{'path': '~/Workspace/_wiki'}]
-let g:deoplete#enable_at_startup=1
+
+let g:ale_fixers = {
+\    'javascript': ['prettier']
+\}
+let g:ale_linters = {
+\    'javascript': ['eslint']
+\}
+let g:ale_fix_on_save = 1
+let g:airline#extensions#ale#enable = 1
