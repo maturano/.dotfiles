@@ -16,6 +16,7 @@ POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_with_package_name"
 POWERLEVEL9K_NODE_VERSION_BACKGROUND="028"
 DEFAULT_USER=$USER
+
 NVM_LAZY_LOAD=true
 NVM_NO_USE=true
 
@@ -23,11 +24,11 @@ NVM_NO_USE=true
 
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
 zplug "bhilburn/powerlevel9k", as:theme
+zplug "rupa/z", use:z.sh
+zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"
-zplug "johnhamelink/rvm-zsh"
-zplug "horosgrisa/autoenv"
-zplug "mchav/with", as:command, use:with
 zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
+zplug "mchav/with", as:command, use:with
 
 # Install plugins if there are plugins that have not been installed
 zplug check || zplug install
@@ -68,3 +69,4 @@ setopt share_history            # Share command history data
 
 # Aliases
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
+
