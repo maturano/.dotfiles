@@ -36,14 +36,6 @@ zplug load
 
 ### Terminal colors
 export CLICOLOR=1
-export CLRCOL=$'\e[0m'
-export WHITE=$'\e[01;37m'
-export GREY=$'\e[33;00m'
-export PINK=$'\e[01;38;5;197m'
-export GREEN=$'\e[01;38;5;82m'
-export ORANGE=$'\e[01;38;5;208m'
-export MAGENTA=$'\e[01;38;5;177m'
-export CYAN=$'\e[01;38;5;81m'
 
 
 # Command history configuration
