@@ -28,6 +28,7 @@ zplug "rupa/z", use:z.sh
 zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"
 zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
+zplug "ericchiang/pup", from:gh-r, as:command
 zplug "mchav/with", as:command, use:with
 
 # Install plugins if there are plugins that have not been installed
