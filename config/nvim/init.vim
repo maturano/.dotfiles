@@ -66,8 +66,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Keep cursor in place when joining lines
 nnoremap J mzJ`z
-" Save with sudo | REVIEW: Could be improve
-cmap w!! w !sudo tee % >/dev/null
+" Save with sudo
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 nmap <leader>l :ls<CR>:b<space>
 " Format JSON | REVIEW: Detect filetype?
 nmap =j :%!python -m json.tool<CR>
