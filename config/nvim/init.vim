@@ -5,6 +5,7 @@ call plug#begin('~/.dotfiles/_vendor/')
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
     \| Plug 'vim-airline/vim-airline-themes'
@@ -42,7 +43,7 @@ set smartcase
 set showmatch
 set nowrap textwidth=120
 set expandtab   " Spaces instead of <Tab>s
-set tabstop=4 softtabstop=4 shiftwidth=4    " TODO: set 2 for X(HT)ML-type
+set tabstop=2 softtabstop=2 shiftwidth=2
 set autoindent
 set smartindent     " TODO: compare with cindent/indentexpr
 set backspace=indent,eol,start
