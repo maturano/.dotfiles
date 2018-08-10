@@ -49,7 +49,7 @@ set hidden
 set number relativenumber
 syntax enable
 
-colorscheme dracula
+silent! colorscheme dracula
 
 " Keyboard
 let mapleader='\<Space>'

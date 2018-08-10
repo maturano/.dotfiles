@@ -4,6 +4,9 @@ ZPLUG="$ZPLUG_HOME/init.zsh"
 
 if [ ! -f "$ZPLUG" ]; then
     git clone https://github.com/zplug/zplug $ZPLUG_HOME
+
+    echo "Asuming a clean environment. Installing VIM plugins..."
+    vim +VimEnter +PlugInstall +qall
 fi
 
 source $ZPLUG
@@ -53,4 +56,3 @@ setopt share_history            # Share command history data
 
 # Aliases
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
-
