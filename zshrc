@@ -8,22 +8,13 @@ fi
 
 source $ZPLUG
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context status background_jobs dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version virtualenv rvm)
-POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_with_package_name"
-POWERLEVEL9K_NODE_VERSION_BACKGROUND="028"
-DEFAULT_USER=$USER
-
 NVM_LAZY_LOAD=true
 NVM_NO_USE=true
 
 
 
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "bhilburn/powerlevel9k", as:theme
+zplug "dracula/zsh", as:theme
 zplug "rupa/z", use:z.sh
 zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"

@@ -1,10 +1,10 @@
 scriptencoding utf-8
 
-call plug#begin('~/.dotfiles/_vendor/')
+call plug#begin('~/.dotfiles/_vendor/vim/')
 " vim-plug: https://github.com/junegunn/vim-plug
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
-Plug 'tomasr/molokai'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
@@ -49,8 +49,7 @@ set hidden
 set number relativenumber
 syntax enable
 
-colorscheme molokai
-let g:rehash256=1
+colorscheme dracula
 
 " Keyboard
 let mapleader='\<Space>'
