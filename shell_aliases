@@ -2,7 +2,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 #alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -l'
+alias ll='ls -lv'
 alias la='ls -A'
 
 alias grep='grep --color=auto '
