@@ -7,5 +7,4 @@ alias la='ls -A'
 
 alias grep='grep --color=auto '
 
-alias vim='nvim'
 alias httpserver='python -m SimpleHTTPServer'

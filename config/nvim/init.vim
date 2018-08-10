@@ -12,10 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'roxma/nvim-completion-manager'
 Plug 'w0rp/ale'
 Plug 'metakirby5/codi.vim'
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -84,5 +82,4 @@ let g:ale_fixers = {
 let g:ale_linters = {
 \    'javascript': ['eslint']
 \}
-let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enable = 1
