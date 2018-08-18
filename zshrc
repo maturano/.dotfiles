@@ -4,10 +4,12 @@ ZPLUG="$ZPLUG_HOME/init.zsh"
 TMUX_PLUGIN_MANAGER_PATH="${ZPLUG_REPOS}"
 
 if [ ! -f "$ZPLUG" ]; then
+    echo "Asuming a clean environment"
+
     git clone https://github.com/zplug/zplug $ZPLUG_HOME
     git clone https://github.com/tmux-plugins/tpm $TMUX_PLUGIN_MANAGER_PATH/tpm && $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins
 
-    echo "Asuming a clean environment. Installing VIM plugins..."
+    echo "Installing VIM plugins..."
     vim +VimEnter +PlugInstall +qall
 fi
 
