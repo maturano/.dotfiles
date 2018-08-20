@@ -10,7 +10,7 @@ if [ ! -f "$ZPLUG" ]; then
     git clone https://github.com/tmux-plugins/tpm $TMUX_PLUGIN_MANAGER_PATH/tpm && $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins
 
     echo "Installing VIM plugins..."
-    vim +VimEnter +PlugInstall +qall
+    vim +PlugInstall +qall
 fi
 
 source $ZPLUG
