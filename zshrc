@@ -27,7 +27,11 @@ zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"
 zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
 zplug "ericchiang/pup", from:gh-r, as:command
+zplug "hlissner/zsh-autopair", defer:2
 zplug "mchav/with", as:command, use:with
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+zplug "chubin/cheat.sh", as:command, use:share/cht.sh.txt, rename-to:cht
 
 # Install plugins if there are plugins that have not been installed
 zplug check || zplug install
