@@ -21,7 +21,7 @@ NVM_NO_USE=true
 
 
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "dracula/zsh", as:theme
+zplug "geometry-zsh/geometry", as:theme
 zplug "rupa/z", use:z.sh
 zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"
