@@ -25,6 +25,7 @@ zplug "geometry-zsh/geometry", as:theme
 zplug "rupa/z", use:z.sh
 zplug "zpm-zsh/autoenv"
 zplug "lukechilds/zsh-nvm"
+zplug "BurntSushi/ripgrep", from:gh-r, as:command, rename-to:rg
 zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
 zplug "ericchiang/pup", from:gh-r, as:command
 zplug "hlissner/zsh-autopair", defer:2
