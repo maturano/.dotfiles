@@ -5,6 +5,7 @@ call plug#begin('~/.dotfiles/_vendor/vim/')
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'othree/yajs.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
@@ -47,6 +48,7 @@ set smartindent     " TODO: compare with cindent/indentexpr
 set backspace=indent,eol,start
 set hidden
 set number relativenumber
+set foldmethod=syntax foldcolumn=1 foldlevelstart=10
 syntax enable
 
 silent! colorscheme dracula
