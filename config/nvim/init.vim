@@ -2,6 +2,7 @@ scriptencoding utf-8
 
 call plug#begin('~/.dotfiles/_vendor/vim/')
 " vim-plug: https://github.com/junegunn/vim-plug
+Plug 'zxqfl/tabnine-vim'
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-surround'
 Plug 'dracula/vim', { 'as': 'dracula' }
