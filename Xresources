@@ -7,24 +7,24 @@
 *italicFont:     xft:dejavu sans mono for powerline:oblique:size=9
 *boldItalicFont: xft:dejavu sans mono for powerline:bold oblique:size=9
 
-*background: #101010
-*foreground: #d0d0d0
-*color0:     #1b1d1e
-*color8:     #505354
-*color1:     #f92672
-*color9:     #ff5995
-*color2:     #82b414
-*color10:    #b6e354
-*color3:     #fd971f
-*color11:    #feed6c
-*color4:     #1080d0
-*color12:    #8cedff
-*color5:     #8c54fe
-*color13:    #9e6ffe
-*color6:     #465457
-*color14:    #899ca1
-*color7:     #ccccc6
-*color15:    #f8f8f2
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
 
 
 
