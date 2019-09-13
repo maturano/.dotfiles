@@ -1,11 +1,11 @@
 
-*faceName: dejavu sans mono for powerline
+*faceName: Monoid
 *faceSize: 9
 
-*font:           xft:dejavu sans mono for powerline:book:size=9
-*boldFont:       xft:dejavu sans mono for powerline:bold:size=9
-*italicFont:     xft:dejavu sans mono for powerline:oblique:size=9
-*boldItalicFont: xft:dejavu sans mono for powerline:bold oblique:size=9
+*font:           xft:Monoid:book:size=9
+*boldFont:       xft:Monoid:bold:size=9
+*italicFont:     xft:Monoid:oblique:size=9
+*boldItalicFont: xft:Monoid:bold oblique:size=9
 
 *.foreground: #F8F8F2
 *.background: #282A36
