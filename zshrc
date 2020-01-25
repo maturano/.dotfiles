@@ -66,3 +66,5 @@ setopt share_history            # Share command history data
 
 # Aliases
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

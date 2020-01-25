@@ -5,6 +5,8 @@ call plug#begin('~/.dotfiles/_vendor/vim/')
 Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  \| Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
@@ -52,6 +54,11 @@ let mapleader='\<Space>'
 nnoremap <F1> <nop>
 nnoremap Q <nop>
 nnoremap K <nop>
+" Files navigation
+nmap <leader>l :ls<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>h :History<CR>
 " Move between windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
