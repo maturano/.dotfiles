@@ -8,7 +8,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-    \| Plug 'vim-airline/vim-airline-themes'
+  \| Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
@@ -67,13 +67,3 @@ nmap =j :%!python -m json.tool<CR>
 
 " Plugins
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:vimwiki_list=[{'path': '~/Workspace/_wiki'}]
-
-let g:ale_fixers = {
-\    'javascript': ['prettier']
-\}
-let g:ale_linters = {
-\    'javascript': ['eslint']
-\}
-let g:airline#extensions#ale#enable = 1
