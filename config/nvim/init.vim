@@ -2,21 +2,13 @@ scriptencoding utf-8
 
 call plug#begin('~/.dotfiles/_vendor/vim/')
 " vim-plug: https://github.com/junegunn/vim-plug
-Plug 'zxqfl/tabnine-vim'
-Plug 'chrisbra/csv.vim'
-Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'othree/yajs.vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-airline/vim-airline'
-    \| Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'w0rp/ale'
-Plug 'metakirby5/codi.vim'
-
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+    \| Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
