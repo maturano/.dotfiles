@@ -3,6 +3,6 @@
 
 setxkbmap -model kinesis -layout us -variant altgr-intl
 xrdb -merge ${HOME}/.dotfiles/Xresources
-feh --bg-scale $HOME/.dotfiles/_assets/wallpaper.jpg
+feh --bg-scale $HOME/.dotfiles/_assets/wallpaper.png
 
 exec i3
