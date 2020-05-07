@@ -2,17 +2,10 @@ scriptencoding utf-8
 
 call plug#begin('~/.dotfiles/_vendor/vim/')
 " vim-plug: https://github.com/junegunn/vim-plug
-Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  \| Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-  \| Plug 'vim-airline/vim-airline-themes'
 call plug#end()
-
 
 " Editor behaviour
 set path+=**
@@ -44,21 +37,20 @@ set backspace=indent,eol,start
 set hidden
 set number relativenumber
 set foldmethod=syntax foldcolumn=1 foldlevelstart=10
-syntax enable
 
+let &t_ut=''  " Fix background issue with kitty
+syntax enable
 silent! colorscheme dracula
+let g:airline_theme='dracula'
 
 " Keyboard
-let mapleader='\<Space>'
+let mapleader=' '
 " Avoid common typos
 nnoremap <F1> <nop>
 nnoremap Q <nop>
 nnoremap K <nop>
 " Files navigation
 nmap <leader>l :ls<CR>
-nnoremap <C-p> :Files<CR>
-nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>h :History<CR>
 " Move between windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -73,4 +65,4 @@ nmap <leader>l :ls<CR>:b<space>
 nmap =j :%!python -m json.tool<CR>
 
 " Plugins
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
