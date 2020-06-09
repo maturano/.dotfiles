@@ -4,6 +4,8 @@ call plug#begin('~/.dotfiles/_vendor/vim/')
 " vim-plug: https://github.com/junegunn/vim-plug
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  \| Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
@@ -53,7 +55,13 @@ nnoremap J mzJ`z|   " Keep cursor in place when joining lines
 nnoremap K <nop>
 nnoremap Q <nop>
 nnoremap <F1> <nop>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>h :History<CR>
 
 " Plugins
 let g:airline_powerline_fonts=1
 let g:airline_theme='dracula'
+
+autocmd! FileType fzf set laststatus=0 noshowmode noruler norelativenumber
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
