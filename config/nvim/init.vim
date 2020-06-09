@@ -6,6 +6,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   \| Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
