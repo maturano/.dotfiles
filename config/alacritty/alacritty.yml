@@ -102,19 +102,19 @@ font:
   ligatures: true
   size: 11.0
   normal:
-    family: Victor Mono
+    family: VictorMono Nerd Font
     style: Regular
 
   bold:
-    family: Victor Mono
+    family: VictorMono Nerd Font
     style: Bold
 
   italic:
-    family: Victor Mono
+    family: VictorMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: Victor Mono
+    family: VictorMono Nerd Font
     style: Bold Italic
 
 
