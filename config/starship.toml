@@ -1,0 +1,13 @@
+[character]
+success_symbol = "[→](bold green)"
+error_symbol = "[→](bold red)"
+vicmd_symbol = "[←](bold green)"
+
+[line_break]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true

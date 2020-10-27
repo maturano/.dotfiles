@@ -18,22 +18,17 @@ source $ZPLUG
 NVM_LAZY_LOAD=true
 NVM_NO_USE=true
 
-
-
-zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "geometry-zsh/geometry", as:theme
-zplug "rupa/z", use:z.sh
-zplug "zpm-zsh/autoenv"
-zplug "lukechilds/zsh-nvm"
 zplug "BurntSushi/ripgrep", from:gh-r, as:command, rename-to:rg
-zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
-zplug "mikefarah/yq", from:gh-r, as:command, rename-to:yq
 zplug "ericchiang/pup", from:gh-r, as:command
 zplug "hlissner/zsh-autopair", defer:2
-zplug "mchav/with", as:command, use:with
+zplug "lukechilds/zsh-nvm"
+zplug "rupa/z", use:z.sh
+zplug "starship/starship", from:gh-r, as:command
+zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "chubin/cheat.sh", as:command, use:share/cht.sh.txt, rename-to:cht
+
 
 # Install plugins if there are plugins that have not been installed
 zplug check || zplug install
@@ -41,7 +36,6 @@ zplug load
 
 ### Terminal colors
 export CLICOLOR=1
-
 
 # Command history configuration
 HISTFILE=$HOME/.private/shell_history
@@ -66,5 +60,6 @@ setopt share_history            # Share command history data
 
 # Aliases
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(starship init zsh)"
