@@ -1,45 +1,8 @@
-ZPLUG_REPOS="$HOME/.dotfiles/_vendor"
-ZPLUG_HOME="$ZPLUG_REPOS/zplug/zplug"
-ZPLUG="$ZPLUG_HOME/init.zsh"
-TMUX_PLUGIN_MANAGER_PATH="${ZPLUG_REPOS}"
-
-if [ ! -f "$ZPLUG" ]; then
-    echo "Asuming a clean environment"
-
-    git clone https://github.com/zplug/zplug $ZPLUG_HOME
-    git clone https://github.com/tmux-plugins/tpm $TMUX_PLUGIN_MANAGER_PATH/tpm && $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins
-
-    echo "Installing VIM plugins..."
-    vim +PlugInstall +qall
-fi
-
-source $ZPLUG
-
-NVM_LAZY_LOAD=true
-NVM_NO_USE=true
-
-zplug "BurntSushi/ripgrep", from:gh-r, as:command, rename-to:rg
-zplug "ericchiang/pup", from:gh-r, as:command
-zplug "hlissner/zsh-autopair", defer:2
-zplug "lukechilds/zsh-nvm"
-zplug "rupa/z", use:z.sh
-zplug "starship/starship", from:gh-r, as:command
-zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
-zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-
-
-# Install plugins if there are plugins that have not been installed
-zplug check || zplug install
-zplug load
-
 ### Terminal colors
 export CLICOLOR=1
 
 # Command history configuration
 HISTFILE=$HOME/.private/shell_history
-
 HISTSIZE=10000
 SAVEHIST=10000
 
@@ -62,4 +25,46 @@ setopt share_history            # Share command history data
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Asumming a clean enviroment installation…%f"
+    print -P "%F{33}▓▒░ %F{34}Installing zinit…%f%b"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin"
+
+    print -P "%F{33}▓▒░ %F{34}Installing vim plugins…%f%b"
+    command vim +PlugInstall +qall
+fi
+
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Plugins
+NVM_LAZY_LOAD=true
+NVM_NO_USE=true
+
+zinit light-mode for \
+    hlissner/zsh-autopair \
+    lukechilds/zsh-nvm \
+    rupa/z \
+    zdharma/fast-syntax-highlighting \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-bin-gem-node \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-rust \
+    zsh-users/zsh-autosuggestions \
+    zsh-users/zsh-completions \
+
+
+zinit ice as"program" from"gh-r" mv"ripgrep* -> rg" pick"rg/rg"
+zinit load BurntSushi/ripgrep
+
+zinit ice as"program" from"gh-r"
+zinit load ericchiang/pup
+
+zinit ice as"program" from"gh-r"
+zinit light starship/starship
 eval "$(starship init zsh)"
+
+zinit ice as"program" from"gh-r" mv"jq-* -> jq"
+zinit load stedolan/jq
