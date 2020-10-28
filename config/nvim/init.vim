@@ -11,17 +11,19 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Editor behaviour
-set nobackup nowritebackup noswapfile
-set path+=**
-set updatetime=300
-set shortmess+=Ic
-set laststatus=2
-set noshowmode
 set hidden
-set ruler
+set laststatus=2
+set mouse=a
+set nobackup nowritebackup noswapfile
+set noshowmode
 set number relativenumber
-set splitbelow splitright
+set path+=**
+set ruler
+set shortmess+=Ic
 set signcolumn=auto
+set splitbelow splitright
+set termguicolors
+set updatetime=300
 set wildignorecase
 set wildmenu
 set wildmode=longest:list
@@ -52,13 +54,13 @@ map <C-l> <C-w>l
 
 nmap =j :%!python -m json.tool<CR>| " Format JSON | REVIEW: Detect filetype?
 
+nnoremap <C-p> :Files<CR>
+nnoremap <F1> <nop>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>h :History<CR>
 nnoremap J mzJ`z|   " Keep cursor in place when joining lines
 nnoremap K <nop>
 nnoremap Q <nop>
-nnoremap <F1> <nop>
-nnoremap <C-p> :Files<CR>
-nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>h :History<CR>
 
 " Plugins
 let g:airline_powerline_fonts=1
