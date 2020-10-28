@@ -40,9 +40,6 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Plugins
-NVM_LAZY_LOAD=true
-NVM_NO_USE=true
-
 zinit light-mode for \
     hlissner/zsh-autopair \
     lukechilds/zsh-nvm \
