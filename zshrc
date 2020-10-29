@@ -20,10 +20,12 @@ setopt hist_verify              # Upon history 'selection', require carriage ret
 setopt inc_append_history       # Add commands to HISTFILE in order of execution
 setopt share_history            # Share command history data
 
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-# Aliases
+fpath=($HOME/.zsh/completions $fpath)
+
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Asumming a clean enviroment installation…%f"
