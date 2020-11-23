@@ -1,1 +1,5 @@
-{}
+{
+  "eslint.autoFixOnSave": true,
+  "git.addGBlameToVirtualText": true,
+  "git.enableGutters": true
+}

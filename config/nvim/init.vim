@@ -73,7 +73,7 @@ nnoremap Q <nop>
 " Plugins
 let g:airline_powerline_fonts=1
 let g:airline_theme='dracula'
-let g:coc_global_extensions=['coc-eslint', 'coc-explorer', 'coc-tsserver']
+let g:coc_global_extensions=['coc-git', 'coc-eslint', 'coc-explorer', 'coc-tsserver']
 
 autocmd! FileType fzf set laststatus=0 noshowmode noruler norelativenumber
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
