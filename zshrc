@@ -21,8 +21,6 @@ setopt hist_verify              # Upon history 'selection', require carriage ret
 setopt inc_append_history       # Add commands to HISTFILE in order of execution
 setopt share_history            # Share command history data
 
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
 fpath=($HOME/.zsh/completions $fpath)
 
 [[ -f ~/.dotfiles/shell_aliases ]] && source ~/.dotfiles/shell_aliases
