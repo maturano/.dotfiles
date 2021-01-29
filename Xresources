@@ -1,11 +1,11 @@
 
-*faceName: Victor Mono
+*faceName: VictorMono Nerd Font Mono
 *faceSize: 9
 
-*font:           xft:VictorMono Nerd Font:Regular:size=9
-*boldFont:       xft:VictorMono Nerd Font:Bold:size=9
-*italicFont:     xft:VictorMono Nerd Font:Italic:size=9
-*boldItalicFont: xft:VictorMono Nerd Font:Bold Italic:size=9
+*font:           xft:VictorMono Nerd Font Mono:Regular:size=9
+*boldFont:       xft:VictorMono Nerd Font Mono:Bold:size=9
+*italicFont:     xft:VictorMono Nerd Font Mono:Italic:size=9
+*boldItalicFont: xft:VictorMono Nerd Font Mono:Bold Italic:size=9
 
 *.foreground: #F8F8F2
 *.background: #282A36
